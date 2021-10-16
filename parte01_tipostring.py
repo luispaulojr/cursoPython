@@ -1,3 +1,6 @@
+
+from collections import Counter
+
 """
 string
 """
@@ -28,3 +31,14 @@ print(empresa[::-1])
 
 # replace em uma string
 print(empresa.replace('E', 'Z'))
+
+texto = """
+Verdades da Profissão de Professor
+Ninguém nega o valor da educação e que um bom professor é imprescindível. Mas, ainda que desejem bons professores para seus filhos, poucos pais desejam que seus filhos sejam professores. Isso nos mostra o reconhecimento que o trabalho de educar é duro, difícil e necessário, mas que permitimos que esses profissionais continuem sendo desvalorizados. Apesar de mal remunerados, com baixo prestígio social e responsabilizados pelo fracasso da educação, grande parte resiste e continua apaixonada pelo seu trabalho.
+A data é um convite para que todos, pais, alunos, sociedade, repensemos nossos papéis e nossas atitudes, pois com elas demonstramos o compromisso com a educação que queremos. Aos professores, fica o convite para que não descuidem de sua missão de educar, nem desanimem diante dos desafios, nem deixem de educar as pessoas para serem “águias” e não apenas “galinhas”. Pois, se a educação sozinha não transforma a sociedade, sem ela, tampouco, a sociedade muda.
+"""
+
+palavras = texto.split()
+print(palavras)
+print(Counter(palavras))
+
